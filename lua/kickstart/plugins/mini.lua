@@ -34,6 +34,10 @@ return {
 
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
+      --  CUSTOM
+      --
+      -- Animates cursor movements so it is easier to follow
+      require('mini.animate').setup()
     end,
   },
 }
