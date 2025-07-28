@@ -5,7 +5,16 @@ return {
   opts = {
     bigfile = { enabled = true },
     explorer = {
-      layout = { preset = 'sidebar', preview = false },
+      replace_netrw = true, -- Replace netrw with the snacks explorer
+    },
+    picker = {
+      ui_select = true,
+      sources = {
+        explorer = {
+          layout = { preset = 'sidebar', preview = false },
+          follow_file = true,
+        },
+      },
     },
     dashboard = {
       sections = {
@@ -50,9 +59,6 @@ return {
     scroll = { enabled = false },
     statuscolumn = { enabled = true },
     words = { enabled = true },
-    picker = {
-      ui_select = true,
-    },
   },
   keys = {
     {
